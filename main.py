@@ -32,7 +32,7 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 class MainHandler(webapp2.RequestHandler):
     def get(self):
         variables = {
-            "cv": "https://drive.google.com/file/d/18I-HMqul82L3MEKdDjd-xxw4AiK3GRWZ"
+            "cv": "https://drive.google.com/open?id=1K3osPgikas2cVXXWH6GfuS2jYqkv4uhw"
         }
         template = JINJA_ENVIRONMENT.get_template('index.html')
         self.response.write(template.render(variables))
